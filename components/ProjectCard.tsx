@@ -22,7 +22,7 @@ const ProjectCard:FunctionComponent<{
         </div>
         {
           showDetails && (
-            <div className="grid md:grid-cols-2 absolute top-0 left-0 h-3/4 lg:h-full z-[100] w-[100%] gap-5 border border-gray-200 p-2 md:p-4 bg-gray-400 rounded-lg dark:bg-black bg-white overflow-hidden cursor-default ">
+            <div className="grid md:grid-cols-2 absolute top-0 left-0 h-[90%] z-[100] w-[100%] gap-5 border border-gray-200 p-2 md:p-4  rounded-lg dark:bg-black bg-white overflow-hidden cursor-default ">
 
                 <div className="relative h-[85%] lg:h-full rounded-lg overflow-hidden">
                   <Image src={project.image_path} layout="fill" objectFit="fill"/>
