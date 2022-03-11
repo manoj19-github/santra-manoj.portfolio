@@ -17,9 +17,9 @@ const Project=()=>{
     setActiveProjects(category)
   }
   return(
-    <div className="p-4">
+    <div className="p-4 h-auto">
       <nav><ProjectsNavbar handleFilterCategory={handleFilterCategory} active={activeProjects}/></nav>
-      <div className="grid grid-cols-12 gap-2 relative h-full ">
+      <div className="grid grid-cols-12 gap-2 relative h-full max-h-full lg:min-h-[25.5rem] ">
       {
         projects.map((project,index)=>(
           <div className="col-span-12 sm:col-span-6 lg:col-span-4 my-4  ">

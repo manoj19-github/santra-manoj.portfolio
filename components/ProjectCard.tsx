@@ -22,21 +22,21 @@ const ProjectCard:FunctionComponent<{
         </div>
         {
           showDetails && (
-            <div className="grid md:grid-cols-2 absolute top-0 left-0 h-[90%] z-[100] w-[100%] gap-5 border border-gray-200 p-2 md:p-4  rounded-lg dark:bg-black bg-white overflow-hidden cursor-default ">
+            <div className="grid md:grid-cols-2 absolute top-0 left-0  h-[90%] lg:h-[90%] lg:min-h-[27rem] z-[100] w-[100%] gap-5 border border-gray-200 p-2 md:p-4  rounded-lg dark:bg-black bg-white overflow-hidden cursor-default ">
 
-                <div className="relative h-[85%] lg:h-full rounded-lg overflow-hidden">
+                <div className="relative h-[10rem] lg:h-full rounded-lg overflow-hidden">
                   <Image src={project.image_path} layout="fill" objectFit="fill"/>
                 </div>
                 <div className="flex flex-col  justify-around lg:justify-evenly">
-                  <p className="text-2xl ">{project.name}</p>
+                  <p className="text-base lg:text-2xl  ">{project.name}</p>
                   <div className="flex flex-col md:flex-row  justify-between items-center text-sm text-white ">
-                    <a className="p-1 rounded-sm bg-gray-700 my-2 md:my-0 text-sm" href={project.deployed_url}> Project </a>
-                    <a className="p-1 rounded-sm bg-gray-700 my-2 md:my-0 text-sm" href={project.Fproject_url}>{project?.Bproject_url ? <span>Frontend Code</span> :<span>Code</span> } </a>
-                    {project?.isFigma && <a className="p-1 rounded-sm bg-gray-700 my-2 md:my-0 text-sm" href={project.isFigma}>Figma Design</a>}
-                    {project?.Bproject_url && <a className="p-1 rounded-sm my-2 md:my-0 bg-gray-700 text-sm" href={project.Bproject_url}>Backend Code</a>}
+                    <a className="p-1 rounded-sm bg-gray-700 mb-1 lg:my-2 md:my-0 text-sm" href={project.deployed_url}> Project </a>
+                    <a className="p-1 rounded-sm bg-gray-700  lg:my-2 md:my-0 text-sm" href={project.Fproject_url}>{project?.Bproject_url ? <span>Frontend Code</span> :<span>Code</span> } </a>
+                    {project?.isFigma && <a className="p-1 rounded-sm bg-gray-700 my-1 lg:my-2 md:my-0 text-sm" href={project.isFigma}>Figma Design</a>}
+                    {project?.Bproject_url && <a className="p-1 rounded-sm my-1 lg:my-2 md:my-0 bg-gray-700 text-sm" href={project.Bproject_url}>Backend Code</a>}
                   </div>
                   <p className="text-sm  ">{project.description}</p>
-                  <div className="grid grid-cols-2 lg:grid-cols-3 gap-2">
+                  <div className="grid grid-cols-2 lg:grid-cols-3 gap-1 lg:gap-2 ">
                     {
                         project.key_tech.map((tech,index)=>(
                           <span className="rounded-sm text-center justify-items-center items-center bg-gray-400 dark:bg-dark-200"  key={index}>{tech}</span>
