@@ -18,7 +18,7 @@ const Sidebar=()=>{
         <span className="text-blue-500">Santra</span>
       </h3>
       <p className="px-2 bg-gray-200 dark:bg-dark-200 text-center py-1 my-2 bg-gray-300 rounded-full">Web Developer</p>
-      <a href="/santra-manoj1.pdf" download
+      <a href="/santra-manoj2.pdf" download
        className="py-1 px-1 mt-2 flex flex-row justify-center items-center w-full bg-gray-200 rounded-full flex justify-center lg:text-[0.7rem] bg-gray-300 dark:bg-dark-200 cursor-pointer">
         <GiTie className="w-6 h-6"/>
         <span>Download Resume</span>
