@@ -95,7 +95,7 @@ export const projects:Iproject[]=[
     name:"Realtime Chat Application",
     description:"This app is completely MERN stack app for one to one and grouped user chat application",
     image_path:"/image/dosti-chat.jpg",
-    deployed_url:"https://dosti-app.netlify.app",
+    deployed_url:"https://dosti-chat-client.vercel.app",
     Fproject_url:"https://github.com/manoj19-github/dosti-chat-client",
     Bproject_url:"https://github.com/manoj19-github/dosti-chat-server",
     category:["React","Express"],
