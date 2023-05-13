@@ -9,9 +9,7 @@ export default function Home() {
     <div className="">
       <div className="flex flex-col px-2 lg:px-6 pt-2 flex-grow">
         <p className="mt-3 font-medium mb-3">
-           I am currently pursuing ‘A’ Level Course (Final Semester) in Information Technology
-           Under DOEACC Scheme from National Institute of Electronics and Information Technology (NIELIT).
-           I have good understanding of Javascript language and MERN stack developments.
+           I have 1 year of experience in MERN stack development and currently working as a software developer at MSQube Technology Solutions Pvt Limited. Specialized in JavaScript language and have professional experience with REACTJS & NODEJS.
         </p>
         <div className="p-4 my-5 bg-gray-400 flex-grow dark:bg-dark-200">
           <h5
